@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+
+  <defs>
+    <linearGradient id="castleGrad" x1="12%" y1="88%" x2="88%" y2="12%">
+      <stop offset="0%" stop-color="#0c1526"/>
+      <stop offset="55%" stop-color="#152238"/>
+      <stop offset="100%" stop-color="#c026d3"/>
+    </linearGradient>
+  </defs>
+<path fill="url(#castleGrad)" fill-opacity="0.12" stroke="url(#castleGrad)" stroke-width="1.8" stroke-linejoin="round" d="M22 72 V44 L32 30 H42 V72 Z"/>
+    <path fill="url(#castleGrad)" fill-opacity="0.12" stroke="url(#castleGrad)" stroke-width="1.8" stroke-linejoin="round" d="M58 72 V30 H68 L78 44 V72 Z"/>
+    <path fill="url(#castleGrad)" fill-opacity="0.12" stroke="url(#castleGrad)" stroke-width="1.8" stroke-linejoin="round" d="M40 72 V50 H60 V72 Z"/>
+    <path fill="url(#castleGrad)" fill-opacity="0.12" stroke="url(#castleGrad)" stroke-width="1.8" stroke-linejoin="round" d="M46 50 V34 H54 V50 Z"/>
+    <path stroke="url(#castleGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M30 30 L34 20 M70 20 L74 30"/>
+    <path stroke="url(#castleGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M46 34 Q50 28 54 34"/>
+    <path stroke="url(#castleGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M46 56 H54 V72"/>
+    <path stroke="url(#castleGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 72 H84"/>
+    <path stroke="url(#castleGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M50 24 V14 M47 17 H53" stroke-opacity="0.55"/>
+</svg>

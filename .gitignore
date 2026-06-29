@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment (keep *.example files)
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+frontend/dist/
+backend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor / local tooling
+.cursor/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Uploads and generated local artifacts
+uploads/
+agent-tools/
