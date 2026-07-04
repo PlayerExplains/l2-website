@@ -56,4 +56,4 @@ services:
       - key: VITE_DISCORD_URL
         sync: false
       - key: VITE_DOWNLOAD_URL
-        value: "#download"
+        sync: false
