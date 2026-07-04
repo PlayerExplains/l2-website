@@ -2,9 +2,9 @@
 
 Full-stack website for a Lineage 2 private server: Vue 3 frontend + Express API backed by your game MySQL database.
 
-**Tutorial by [PlayerExplains](https://www.youtube.com/@playerexplains)**
+## Demo
 
-This repository is the companion project for the PlayerExplains tutorial on building and deploying a Lineage 2 server website with AI-assisted development.
+Watch the video guide here 👉 https://youtu.be/sRx0mssywL8
 
 ## Works With Any Server Pack
 
@@ -70,6 +70,144 @@ l2website/
 - **Backend routes** are thin; **services** contain all SQL.
 - **Services** test DB connectivity first. On failure they return mock data so the site still renders.
 - **Credentials** stay in `backend/.env` only — never exposed to the browser.
+
+## AI Prompt
+
+You are a senior full-stack developer helping me build a modern Lineage 2 private server website.
+
+I am using this server pack:
+
+**< REPLACE WITH YOUR SERVER PACK NAME >**
+https://replace-with-your-serverpack-repository-link
+
+Use the database structure from this server pack.
+
+Important database tables for this tutorial:
+
+characters:
+- charId
+- char_name
+- level
+- pvpkills
+- pkkills
+- clanid
+- online
+- accesslevel
+- deletetime
+
+castle:
+- id
+- name
+- taxPercent
+- siegeDate
+- regTimeOver
+- regTimeEnd
+
+clan_data:
+- clan_id
+- clan_name
+- hasCastle
+- leader_id
+- clan_level
+- reputation_score
+
+siege_clans:
+- castle_id
+- clan_id
+- type
+- castle_owner
+
+I want to build a full-stack website using:
+
+Frontend:
+- Vue 3
+- Vite
+- plain CSS or scoped CSS
+- no complicated UI libraries
+
+Backend:
+- Node.js
+- Express.js
+- mysql2/promise
+- dotenv
+- CORS enabled for local development
+
+Database:
+- MySQL or MariaDB
+- **< L2J YOUR SERVER PACK NAME HERE >** game database
+
+Website features:
+- Modern homepage for a Lineage 2 private server
+- Top PvP players
+- Top PK players
+- Online players count
+- Server status card
+- Castle ownership status
+- Next siege date if available
+- Download button
+- Register button
+- Discord/community button
+- Feature cards
+
+Design direction:
+Use these links only as visual inspiration, not as an exact copy:
+
+**https://your-design-example.com**
+
+I want a modern inspired design:
+- clean premium fantasy landing page
+- light lavender / white / dark navy color palette
+- magenta accent buttons
+- elegant hero section
+- fantasy character placeholder on the right
+- players online card
+- next siege card
+- rankings section
+- features section
+- smooth responsive layout
+- polished but beginner-friendly code
+
+Do not use official Lineage 2 logos or copyrighted game assets.
+Use placeholder images that I can replace later.
+
+Backend API routes to create:
+
+GET /api/health
+Returns whether the backend and database are working.
+
+GET /api/rankings/pvp
+Returns top 10 PvP players from the characters table.
+
+GET /api/rankings/pk
+Returns top 10 PK players from the characters table.
+
+GET /api/stats
+Returns:
+- online players count
+- total characters count
+- server status
+- max level character count if useful
+- basic hardcoded rates from .env, such as XP_RATE, SP_RATE, ADENA_RATE, DROP_RATE
+
+GET /api/castles
+Returns all castles, their owner clan if any, taxPercent, and siegeDate.
+
+Analyze and use my L2J serverpack **< HERE PASTE LINK TO YOUR SERVERPACK REPOSITORY >** SQL
+
+Important:
+- Keep all SQL queries in a separate backend/services or backend/models file.
+- Use parameterized queries when parameters are needed.
+- Add comments explaining which database columns come from L2J Mobius CT_0 Interlude.
+- If the database is not connected, return mock data so the frontend still works for the tutorial.
+- Log the real database error in the backend console.
+- Do not expose database credentials to the frontend.
+
+Before writing code:
+1. Generate the full project structure.
+2. Explain the architecture.
+3. Then create the backend files.
+4. Then create the frontend files.
+5. Then give me the exact terminal commands to run everything locally.
 
 ## Database Tables (L2J Mobius CT_0 Interlude)
 
